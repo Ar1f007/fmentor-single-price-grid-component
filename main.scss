@@ -35,6 +35,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10rem 0;
+  position: relative;
 
   @media only screen and (max-width: 31.25em) {
     padding: 8rem 3rem;
