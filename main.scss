@@ -1,0 +1,183 @@
+// Primary
+$color-cyan: hsl(179, 62%, 43%);
+$color-bright-yellow: hsl(71, 73%, 54%);
+//Neutral
+$color-light-gray: hsl(204, 43%, 93%);
+$color-grayish-blue: hsl(218, 22%, 67%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 100em) {
+    font-size: 80%;
+  }
+  @media only screen and (max-width: 75em) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 48em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-light-gray;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 8rem 3rem;
+  }
+}
+
+.main {
+  overflow: hidden;
+  width: 60%;
+  margin: auto;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  @media only screen and (max-width: 75em) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 48em) {
+    width: 90%;
+  }
+  @media only screen and (max-width: 31.25em) {
+    width: 100%;
+  }
+
+  .section-top {
+    background-color: #fff;
+    width: 100%;
+    padding: 5rem;
+
+    @media only screen and (max-width: 31.25em) {
+      padding: 5rem 3.5rem;
+      border-radius: 5px 5px 0 0;
+    }
+
+    &__heading {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: $color-cyan;
+    }
+
+    &__sub-heading {
+      font-size: 2.2rem;
+      color: $color-bright-yellow;
+    }
+
+    &__paragraph {
+      font-size: 1.8rem;
+      color: $color-grayish-blue;
+      padding: 1rem 0;
+      width: 90%;
+
+      @media only screen and (max-width: 31.25em) {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-bottom {
+    width: 100%;
+    display: flex;
+
+    @media only screen and (max-width: 31.25em) {
+      flex-direction: column;
+    }
+
+    .section-side {
+      flex-basis: 50%;
+      padding: 4rem 5rem 2.5rem;
+
+      @media only screen and (max-width: 31.25em) {
+        padding: 5rem 3.5rem 2.5rem;
+      }
+
+      &__heading {
+        font-size: 2.2rem;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+
+    .section-left {
+      background-color: $color-cyan;
+      &__price {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #fff;
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: rgba($color: $color-light-gray, $alpha: 0.7);
+          letter-spacing: 1px;
+          margin-left: 1.5rem;
+        }
+      }
+
+      &__text {
+        font-size: 1.8rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 3rem;
+        letter-spacing: 0.5px;
+      }
+
+      .btn {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        display: inline-block;
+        width: 95%;
+        background-color: $color-bright-yellow;
+        text-align: center;
+        padding: 1.5rem 0;
+        border-radius: 8px;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+
+        @media only screen and (max-width: 48em) {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-right {
+      background-color: rgba($color-cyan, 0.7);
+      @media only screen and (max-width: 31.25em) {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      &__features {
+        list-style: none;
+        color: $color-light-gray;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      &__feature {
+        line-height: 1.7;
+      }
+    }
+  }
+}
