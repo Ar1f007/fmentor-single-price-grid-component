@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Ar1f007/fmentor-single-price-grid-component
+- Live Site URL: https://single-price-grid-component-ar1f007.vercel.app/
 
 ## Author
 
